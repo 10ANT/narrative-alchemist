@@ -314,6 +314,7 @@ Every layer of the stack — agents, API routes, frontend, styling — was built
 
 ## 📄 License
 
-MIT License — Copyright (c) 2026 Narrative Alchemist / Adrian Tennant
+MIT License — Copyright (c) 2026 Narrative Alchemist / Adrian Tennant and Malik Christopher
+
 
 > Built with the Microsoft Azure AI stack for the **Microsoft Agents League Hackathon 2026**.
