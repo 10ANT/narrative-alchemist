@@ -114,16 +114,11 @@ All generated stories persist across sessions. The library shows cover art, tone
 
 ## 🏛️ System Architecture
 
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <img src="https://i.ibb.co/Tx4D8Kr8/arch1.png" alt="System Architecture Diagram" width="100%"/>
-    </td>
-    <td width="50%" align="center">
-      <img src="https://i.ibb.co/7dwvwzH0/arch2.png" alt="Agent Pipeline Flow Diagram" width="100%"/>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="https://i.ibb.co/Tx4D8Kr8/arch1.png" alt="System Architecture Diagram" width="800"/>
+  <br/><br/>
+  <img src="https://i.ibb.co/7dwvwzH0/arch2.png" alt="Agent Pipeline Flow Diagram" width="800"/>
+</div>
 
 > Full Mermaid diagrams (5 views: system overview, agent sequence, data model, Azure service map, route map) in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
@@ -242,32 +237,25 @@ npm run dev
 
 ## 📸 Project Screenshots
 
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <img src="https://i.ibb.co/p66HR1Tt/screenshot1.png" alt="Home — Story Creator" width="100%"/>
-      <br/><strong>Home — Story Creator</strong><br/>
-      <em>Prompt form with tone, region, and length configuration</em>
-    </td>
-    <td width="50%" align="center">
-      <img src="https://i.ibb.co/HTCwdfn0/screenshot2.png" alt="Generate — Live Agent Pipeline" width="100%"/>
-      <br/><strong>Generate — Live Agent Pipeline</strong><br/>
-      <em>Four agents completing in real time via SSE</em>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <img src="https://i.ibb.co/DHhYxXfS/screenshot3.png" alt="Story Viewer — Dark Mode" width="100%"/>
-      <br/><strong>Story Viewer — Dark Mode</strong><br/>
-      <em>Split-screen visual novel with GPT Image 2 illustration</em>
-    </td>
-    <td width="50%" align="center">
-      <img src="https://i.ibb.co/Xx4YjC3h/screenshot4.png" alt="Story Library" width="100%"/>
-      <br/><strong>Story Library</strong><br/>
-      <em>Persistent story grid with tone and region filtering</em>
-    </td>
-  </tr>
-</table>
+<div align="center">
+
+**Home — Story Creator** · *Prompt form with tone, region, and length configuration*
+
+<img src="https://i.ibb.co/p66HR1Tt/screenshot1.png" alt="Home — Story Creator" width="800"/>
+
+**Generate — Live Agent Pipeline** · *Four agents completing in real time via SSE*
+
+<img src="https://i.ibb.co/HTCwdfn0/screenshot2.png" alt="Generate — Live Agent Pipeline" width="800"/>
+
+**Story Viewer — Dark Mode** · *Split-screen visual novel with GPT Image 2 illustration*
+
+<img src="https://i.ibb.co/DHhYxXfS/screenshot3.png" alt="Story Viewer — Dark Mode" width="800"/>
+
+**Story Library** · *Persistent story grid with tone and region filtering*
+
+<img src="https://i.ibb.co/Xx4YjC3h/screenshot4.png" alt="Story Library" width="800"/>
+
+</div>
 
 ---
 
