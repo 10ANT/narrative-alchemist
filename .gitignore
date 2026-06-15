@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment — NEVER commit secrets
+.env
+.env.local
+.env.*.local
+
+# Next.js build output
+.next/
+out/
+
+# Generated artifacts (large, regenerated on demand)
+public/generated-images/
+public/stories/*.json
+
+# Logs
+*.log
+npm-debug.log*
+dev-server.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Local project notes — do not commit
+PROJECT_DESCRIPTION.md
+
+# Private submission notes
+docs/SUBMISSION.md
