@@ -6,9 +6,11 @@
   ### *One prompt in. A fully playable, illustrated, narrated visual novel out — in under 60 seconds.*
 
   [![Microsoft Azure](https://img.shields.io/badge/Built%20with-Microsoft%20Azure-0078D4?style=for-the-badge&logo=microsoftazure)](https://azure.microsoft.com/)
+  [![Foundry IQ](https://img.shields.io/badge/Powered%20by-Foundry%20IQ-764ba2?style=for-the-badge&logo=microsoftazure)](https://azure.microsoft.com/en-us/products/ai-services/ai-search)
   [![Next.js 16](https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=nextdotjs)](https://nextjs.org/)
   [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
   [![GPT Image 2](https://img.shields.io/badge/GPT%20Image%202-Azure%20OpenAI-412991?style=for-the-badge&logo=openai)](https://azure.microsoft.com/en-us/products/ai-services/openai-service)
+  [![GitHub Copilot](https://img.shields.io/badge/Built%20with-GitHub%20Copilot-24292e?style=for-the-badge&logo=githubcopilot)](https://github.com/features/copilot)
   [![Agents League 2026](https://img.shields.io/badge/Microsoft%20Agents%20League-2026-00A4EF?style=for-the-badge&logo=microsoft)](https://microsoft.com/)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
@@ -21,6 +23,8 @@
 **Narrative Alchemist** is a multi-agent creative AI platform built for the **Microsoft Agents League Hackathon 2026 — Creative Apps Track**.
 
 It solves the most fundamental creative bottleneck: turning a raw story idea into something *playable* — with illustrations, voice narration, and branching choices — normally takes days of work across disconnected tools. Narrative Alchemist collapses that entire production pipeline into **a single sentence and 60 seconds**, using four specialized Azure AI agents that each own one layer of the creative stack and hand off to each other automatically.
+
+> **Foundry IQ** is at the core of every story. Before a single word of prose is generated, PlotAgent queries the Azure AI Search knowledge index to retrieve verified real-world facts. Those facts are woven into the narrative and surfaced to users as cited **Agent Insights** on every scene — so every story is grounded in knowledge, not hallucinated from thin air.
 
 The output isn't a document. It isn't an image gallery. It's a fully playable **branching visual novel** — complete with AI-generated scene illustrations, professional neural voice narration, real-world fact grounding via Azure AI Search, and interactive story choices — all from one prompt.
 
@@ -272,6 +276,22 @@ Narrative Alchemist is built with responsible AI principles at every layer:
 | Full-Stack Developer · AI Engineer |
 
 </div>
+
+---
+
+## 🤖 AI-Assisted Development
+
+Narrative Alchemist was built using **AI-assisted development tools** throughout — from initial architecture to production edge cases.
+
+| Phase | AI Assistance Applied |
+|:------|:----------------------|
+| **Agent design** | AI tools drafted the typed `StoryBundle` / `Scene` / `Choice` interfaces and the sequential pipeline orchestration pattern |
+| **Azure SDK wiring** | Azure OpenAI, Azure AI Search, and Azure Speech API calls — correct header names, API versions, and SSML structure |
+| **SSE streaming** | `ReadableStream` + `TextEncoder` pattern for the Next.js SSE route, including the race-condition guard for controller close |
+| **SCSS design system** | CSS custom property structure for the full light/dark theme system |
+| **Debugging** | GPT Image 2 unsupported parameter diagnosis, Azure Blob Storage 409 resolution, and local file storage fallback |
+
+Every layer of the stack — agents, API routes, frontend, styling — was built with AI assistance accelerating design and implementation decisions.
 
 ---
 
