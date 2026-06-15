@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://i.ibb.co/35vc94Wb/banner.png" alt="Narrative Alchemist Banner" width="100%" style="border-radius:12px"/>
+  <img src="https://i.ibb.co/35vc94Wb/banner.png" alt="Narrative Alchemist Banner"  style="border-radius:12px"/>
 
   # ✦ Narrative Alchemist
 
