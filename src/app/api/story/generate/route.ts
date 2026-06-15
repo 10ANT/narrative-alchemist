@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { NextRequest, NextResponse, after } from 'next/server'
 import { setStory } from '@/lib/storyStore'
 import { runPipeline } from '@/lib/pipeline'
 import type { GenerateRequest, StoryBundle } from '@/types/story'
@@ -31,8 +31,8 @@ export async function POST(req: NextRequest) {
 
   setStory(id, bundle)
 
-  // Fire and forget — pipeline runs async
-  runPipeline(id).catch(err => console.error('Pipeline uncaught:', err))
+  // Run pipeline after response — keeps work alive on Vercel serverless
+  after(runPipeline(id).catch(err => console.error('Pipeline uncaught:', err)))
 
   return NextResponse.json({ id })
 }

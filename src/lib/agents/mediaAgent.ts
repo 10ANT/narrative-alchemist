@@ -1,6 +1,4 @@
 import type { Scene } from '@/types/story'
-import fs from 'fs/promises'
-import path from 'path'
 
 async function generateImage(imagePrompt: string): Promise<string | undefined> {
   try {
@@ -30,23 +28,10 @@ async function generateImage(imagePrompt: string): Promise<string | undefined> {
     const b64 = data?.data?.[0]?.b64_json
     if (!b64) return undefined
 
-    return await saveImageLocally(b64)
+    // Return as data URL — works on any platform (no disk required)
+    return `data:image/png;base64,${b64}`
   } catch (err) {
     console.error('generateImage error:', err)
-    return undefined
-  }
-}
-
-async function saveImageLocally(b64: string): Promise<string | undefined> {
-  try {
-    const dir = path.join(process.cwd(), 'public', 'generated-images')
-    await fs.mkdir(dir, { recursive: true })
-    const filename = `${Date.now()}-${Math.random().toString(36).slice(2)}.png`
-    const buffer = Buffer.from(b64, 'base64')
-    await fs.writeFile(path.join(dir, filename), buffer)
-    return `/generated-images/${filename}`
-  } catch (err) {
-    console.error('saveImageLocally error:', err)
     return undefined
   }
 }
